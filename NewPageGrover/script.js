@@ -37,6 +37,18 @@ function mostrarListado() {
 function ocultarListado() {
     document.getElementById('premio').style.display = 'none';
 }
+ 
+
+
+jQuery('document').ready(function($){ 
+    $("#boton123").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#GroverApp").offset().top
+        }, 1000);
+        console.log()
+    });
+});
+
 
 
 
