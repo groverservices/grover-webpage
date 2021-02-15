@@ -41,16 +41,27 @@ function ocultarListado() {
 
 
 jQuery('document').ready(function($){ 
-    $("#boton123").click(function() {
+    $("#boton1").click(function() {
         $('html, body').animate({
             scrollTop: $("#GroverApp").offset().top
         }, 1000);
-        console.log()
+    });
+    $("#boton2").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#xqGrover").offset().top
+        }, 1000);
+    });
+    $("#boton3").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#tupack").offset().top
+        }, 1000);
+    });
+    $("#boton4").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#vendefacil").offset().top
+        }, 1000);
     });
 });
-
-
-
 
 
 
