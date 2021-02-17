@@ -1395,6 +1395,11 @@ footer p {
         display: block;
     } 
 
+    /* packs respnsive */
+    .icon-pack-2{
+        width: 100px;
+    }
+
     /* vender nunca fue tan facil */
 
     .container-vender {
