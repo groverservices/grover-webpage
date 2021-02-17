@@ -163,7 +163,7 @@ header {
     align-content: center;
     position: absolute;
     width: 100vw;
-    padding-top: 25px;
+    margin-top: 25px;
     flex-wrap: wrap;
 }
 
