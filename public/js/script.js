@@ -27,6 +27,55 @@ menuClose.click(function() {
    });
 });
 
+jQuery('document').ready(function($){
+    var menuClose = $('#closer'),
+        menu = $('.navegación ul');
+
+menuClose.click(function() {
+    if(menu.hasClass('show')) {
+        menu.removeClass('show');
+    } else {
+        menu.addClass('show');
+    }
+
+   });
+   var menuClose = $('#closer2'),
+        menu = $('.navegación ul');
+
+menuClose.click(function() {
+    if(menu.hasClass('show')) {
+        menu.removeClass('show');
+    } else {
+        menu.addClass('show');
+    }
+
+   });
+   var menuClose = $('#closer3'),
+        menu = $('.navegación ul');
+
+menuClose.click(function() {
+    if(menu.hasClass('show')) {
+        menu.removeClass('show');
+    } else {
+        menu.addClass('show');
+    }
+
+   });
+   var menuClose = $('#closer4'),
+        menu = $('.navegación ul');
+
+menuClose.click(function() {
+    if(menu.hasClass('show')) {
+        menu.removeClass('show');
+    } else {
+        menu.addClass('show');
+    }
+
+   });
+});
+
+
+
 // opciones
 
 
