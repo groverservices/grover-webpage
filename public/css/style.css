@@ -146,6 +146,10 @@ header {
     display: block;
 }
 
+.title{
+    font-size: 4rem;
+}
+
 .header a {
     text-decoration: none;
 }
@@ -199,6 +203,10 @@ header {
 
 .menu-icon-close {
     display: none;
+}
+
+.image-header{
+    width: 40px;
 }
 
 /*texto de la portada*/
@@ -873,7 +881,15 @@ footer p {
     }
     .price-info {
     border-top:0 !important;
+    }
     
+    .Obtner {
+        width: 180px;
+        height: 40px;
+        background-color: #F2D64B;
+        text-decoration: none;
+        border: 0;
+        cursor: pointer;
     }
     
     }
@@ -1185,7 +1201,7 @@ footer p {
 
     .menu-icon {
         display: flex;
-        margin-right: 5%;
+        padding-right: 9%;
         cursor: pointer;
         z-index: 9999;
     }
@@ -1221,7 +1237,7 @@ footer p {
         display: flex;
         cursor: pointer;
         position: absolute;
-        right: 5%;
+        right: 9%;
         top: 25px;
         z-index: 11111;
     }
@@ -1271,7 +1287,7 @@ footer p {
     .title {
         margin-top: 10px;
         color: white;
-        font-size: 50px;
+        font-size: 2.5rem;
     }
 
     .title2 {
