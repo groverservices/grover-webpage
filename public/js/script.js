@@ -61,6 +61,16 @@ jQuery('document').ready(function($){
             scrollTop: $("#vendefacil").offset().top
         }, 1000);
     });
+    $("#boton5").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#tupack").offset().top
+        }, 1000);
+    });
+    $("#boton6").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#footerScroll").offset().top
+        }, 1000);
+    });
 });
 
 
