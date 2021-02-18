@@ -78,14 +78,6 @@ menuClose.click(function() {
 
 // opciones
 
-function mostrarTienda(){
-    var url = 'https://groverservices.com/groverapp/';
-    
-    var win = window.open(url, '_blank SameSite=Strict');
-    
-    win.focus();
-}
-
 
 function mostrarListado() {
     document.getElementById('premio').style.display = 'block';

@@ -1,0 +1,1420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*presets página*/
+
+h1 {
+    letter-spacing: 3px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+button h1 {
+    font-weight: 800;
+    display: inline-block;
+}
+
+a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    color: black;
+    font-weight: 400;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+b {
+    font-weight: 500;
+}
+
+button {
+    border-radius: 2rem;
+}
+
+/* scroll */
+
+  .inline-photo {
+    opacity: 0;
+    transform: translateY(1em) rotateZ(-5deg);
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .5s .25s ease-out;
+    will-change: transform, opacity;
+  }
+
+  .inline-photo.is-visible {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+
+  .main-photo {
+    transform: scale(.8);
+  }
+
+  .header2 {
+    opacity: 0;
+    transition: opacity .5s .25s ease-out;
+  }
+  
+  .header2.is-visible {
+    opacity: 1;
+  }
+  
+  .heading {
+    transform: translate(-50%, calc(-50% + 1em));
+  }
+
+  .is-visible .main-photo {
+    transform: none;
+  }
+  
+  .is-visible .heading {
+    transform: translate(-50%, -50%);
+  }
+
+  .main-photo,
+
+  .heading {
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1);
+  will-change: transform;
+  }
+
+/*header y portada*/
+
+.video { 
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+}
+
+.fondo {
+    background-image: linear-gradient(0deg, #000000 0%, #000000cc 100%);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+/* header */
+
+.logo {
+    display: block;
+    width: 29%;
+    z-index: 9999;
+    padding-left: 17.5%;
+}
+
+header {
+    color: white;
+    display: block;
+}
+
+.title{
+    font-size: 4rem;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    width: 100vw;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.navegación {
+    padding-right: 17.5%;
+    z-index: 9999;
+}
+
+.navegación ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegación ul li {
+    display: inline-block;
+}
+
+.navegación li a:hover {
+    color: #F2D64B;
+    transition: all 0.2s linear;
+}
+
+.navegación li a:active {
+    color: #F2D64B;
+}
+
+.navegación ul li a {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon-close {
+    display: none;
+}
+
+.image-header{
+    width: 40px;
+}
+
+/*texto de la portada*/
+
+.contenedor {
+    width: 65%;
+    margin: 0 auto;
+   text-align: center;
+    position: relative;
+    top: 32%;
+}
+
+.title {
+    margin-top: 10px;
+    color: white;
+}
+
+.title2 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.title3 {
+    color: #F2D64B;
+    
+    letter-spacing: 5px;
+    position: relative;
+    animation: text 2s;
+}
+
+.animation {
+    text-transform: uppercase;
+    display: block;
+}
+
+@keyframes text{
+    0% {
+        color: black;
+        margin-bottom: -60px;
+    }
+    30% {
+        letter-spacing: 10px;
+        
+    }
+}
+
+.Obtner {
+    width: 280px;
+    height: 50px;
+    background-color: #F2D64B;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.Obtner:hover {
+    text-decoration: none;
+    border: 0;
+    background-color: #f8d83a;
+}
+
+.Obtner:active {
+    text-decoration: none;
+    border: 0;
+    background-color: #f8d83a;
+}
+
+button:focus {
+    outline: none; 
+}
+
+/* Grover app */
+
+
+.template-columns-groverApp {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    column-gap: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: fr 1fr 1fr;
+    grid-template-areas: 
+    "title-ga title-ga title-ga"
+    "Imagen1-ga Imagen2-ga Imagen3-ga"
+    "text1-ga text2-ga text3-ga"
+}
+
+.template-columns-groverApp h3 {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+#title-ga {
+    grid-area: title-ga;
+}
+
+#Imagen1-ga {
+    grid-area: Imagen1-ga;
+}
+
+#text1-ga {
+    grid-area: text1-ga;
+}
+
+#Imagen2-ga {
+    grid-area: Imagen2-ga;
+}
+
+#text2-ga {
+    grid-area: text2-ga;
+}
+
+#Imagen3-ga {
+    grid-area: Imagen3-ga;
+}
+
+#text3-ga {
+    grid-area: text3-ga;
+}
+
+.template-columns-groverApp h2 {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.template-columns-groverApp p {
+    color: black;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.template-columns-groverApp img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Soluciones Grover */
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 3fr fr;
+    grid-template-areas: 
+    "titlePorque titlePorque titlePorque"
+    "izq-sup main der-sup"
+    "izq-inf main der-inf"
+    ;
+    
+}
+
+.container p {
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.container h1 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container h2 {
+    font-size: 18px;
+    padding-top: 0.5rem;
+}
+
+mark {
+    background: #f9e48a;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.image-porque {
+    width: 450px;
+    min-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+#main {
+    grid-area: main;
+}
+
+#titlePorque {
+    grid-area: titlePorque;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+#izq-sup {
+    grid-area: izq-sup;
+    text-align: end;
+    margin-top: 5rem;
+}
+
+#izq-inf {
+    grid-area: izq-inf;
+    text-align: end;
+}
+
+#der-sup {
+    grid-area: der-sup;
+    margin-top: 5rem;
+}
+
+#der-inf {
+    grid-area: der-inf;
+}
+
+/* Misión Grover */
+
+.titleLeyenda { 
+    margin-top: 10px;
+    color: black;
+}
+
+.Leyenda1 {
+    letter-spacing: 1px;
+}
+
+.Leyenda1 mark {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.Obtner1 {
+    width: 150px;
+    height: 30px;
+    background-color: #F2D64B;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.Obtner1:hover {
+    text-decoration: none;
+    border: 0;
+    background-color: #f8d83a;
+}
+
+.Obtner1:active {
+    text-decoration: none;
+    border: 0;
+    background-color: #f8d83a;
+}
+
+.template-columns {
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr;
+    display: grid;
+    gap: 2rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 10rem;
+    padding-top: 3rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+
+.image {
+    width: 300px;
+}
+
+/* packs GroverApp */
+
+.container-pack {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: fr 1fr;
+    grid-template-areas: 
+    "title-pack title-pack"
+    "box-pack box-pack2"
+    ;
+}
+
+.boxs {
+    margin: 0 auto;
+    display: block;
+    width: 350px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: white;
+    padding-top: 3rem;
+}
+
+#title-pack{
+    grid-area: title-pack;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+#box-pack{
+    grid-area: box-pack;
+}
+
+#box-pack2{
+    grid-area: box-pack2;
+}
+
+.container-pack h2 {
+    text-align: center;
+}
+
+.container-pack p {
+    text-align: center;
+    color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container-pack button {
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 30px;
+}
+
+.container-pack img {
+    margin: 0 auto;
+    display: block;
+}
+
+/* .curved {
+    background-image: url("https://www.groverservices.com/wp-content/uploads/2021/01/fondo.jpg");
+}
+ */
+
+/* sección nunca fue tan fácil vender */
+
+.container-vender {
+    background-color: #f9e48a;
+    padding-bottom: 10rem;
+}
+
+.container-vender p {
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: inline;
+}
+
+.container-vender h2 {
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: inline;
+}
+
+.container-vender li {
+    list-style: none;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.container-vender mark {
+    background: white;
+}
+
+.container-vender h2 {
+    font-size: 22px;
+}
+
+.grid-vender {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 6rem;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: fr 1fr;
+    grid-template-rows: fr 1fr;
+    grid-template-areas: 
+    "titulo-1 titulo-1"
+    "image-vender points-vender"
+    ;
+}
+
+#titulo-1 {
+    grid-area: titulo-1;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+#image-vender {
+    grid-area: image-vender;
+    margin: 0 auto;
+    display: block;
+}
+
+#points-vender {
+    grid-area: points-vender;
+    position: relative;
+    top: 60%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.image-v {
+    width: 320px;
+    float: right;
+}
+
+/* footer */
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #000;
+    background-color: #f9e48a;
+}
+
+footer p {
+    color: black;
+}
+
+.footer > *{
+    flex: 1 100%;
+}
+
+.footer-left {
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.footer-left img {
+    width: 50%;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer-right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.footer-right > *{
+    flex: 1 50%;
+}
+
+.box a {
+    color: rgb(92, 92, 92);
+}
+
+.footer-bottom {
+    text-align: center;
+    color: rgb(92, 92, 92);
+    padding-top: 50px;
+}
+
+.footer-left p {
+    padding-right: 20%;
+    color: rgb(92, 92, 92); 
+}
+
+.socials img {
+    width: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* grover product */
+
+.comparison {
+    max-width:940px;
+    margin:0 auto;
+    font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:center;
+    padding:10px;
+    }
+
+    .comparison table {
+    width:100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    border-bottom:1px solid #CCC;
+    }
+
+    .comparison td, .comparison th {
+    border-right:1px solid #CCC;
+    empty-cells: show;
+    padding:10px;
+    }
+
+    .compare-heading {
+    font-size:18px;
+    font-weight:bold !important;
+    border-bottom:0 !important;
+    padding-top:10px !important;
+    }
+
+    .comparison tbody tr:nth-child(odd) {
+    display:none;
+    }
+
+    .comparison .compare-row {
+    background:#F5F5F5;
+    }
+
+    .comparison .tickblue {
+        color:#009E2C;
+    }
+
+    .comparison .tickgreen {
+    color:#009E2C;
+    }
+
+    .comparison th {
+    font-weight:normal;
+    padding:0;
+    border-bottom:1px solid #CCC;
+    }
+
+    .comparison tr td:first-child {
+    text-align:left;
+    }
+    
+    .comparison .qbse, .comparison .qbo, .comparison .tl {
+    color:#FFF;
+    padding:10px;
+    font-size:13px;
+    border-right:1px solid #CCC;
+    border-bottom:0;
+    }
+
+    .comparison .tl2 {
+    border-right:0;
+    }
+
+    .comparison .qbse {
+    background: rgb(189, 189, 189);
+    border-top-left-radius: 3px;
+    border-left:0px;
+    }
+
+    .comparison .qbo {
+    background:#f8d83a;
+    border-top-right-radius: 3px;
+    border-right:0px;
+    }
+
+    .comparison .price-info {
+    padding:5px 15px 15px 15px;
+    }
+
+    .comparison .price-was {
+    color:#999;
+    }
+
+    .comparison .price-now, .comparison .price-now span {
+    color:#ff5406;
+    }
+
+    .comparison .price-now span {
+    font-size:32px;
+    }
+
+    .comparison .price-small {
+        font-size: 18px !important;
+        position: relative;
+        top: -11px;
+        left: 2px;
+    }
+
+    .comparison .price-buy {
+    background:#ff5406;
+    padding:10px 20px;
+    font-size:12px;
+    display:inline-block;
+    color:#FFF;
+    text-decoration:none;
+    border-radius:3px;
+    text-transform:uppercase;
+    margin:5px 0 10px 0;
+    }
+
+    .comparison .price-try {
+    font-size:12px;
+    }
+
+    .comparison .price-try a {
+    color:#202020;
+    }
+
+    @media (max-width: 767px) {
+    .comparison td:first-child, .comparison th:first-child {
+        display: none;
+    }
+    .comparison tbody tr:nth-child(odd) {
+        display:table-row;
+        background:#F7F7F7;
+    }
+    .comparison .row {
+        background:#FFF;
+    }
+    .comparison td, .comparison th {
+        border:1px solid #CCC;
+    }
+    .price-info {
+    border-top:0 !important;
+    }
+    
+    .Obtner {
+        width: 180px;
+        height: 40px;
+        background-color: #F2D64B;
+        text-decoration: none;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    }
+
+    @media (max-width: 639px) {
+    .comparison .price-buy {
+        padding:5px 10px;
+    }
+    .comparison td, .comparison th {
+        padding:10px 5px;
+    }
+    .comparison .hide-mobile {
+        display:none;
+    }
+    .comparison .price-now span {
+    font-size:16px;
+    }
+
+    .comparison .price-small {
+        font-size: 16px !important;
+        top: 0;
+        left: 0;
+    }
+    .comparison .qbse, .comparison .qbo {
+        font-size:12px;
+        padding:10px 5px;
+    }
+    .comparison .price-buy {
+        margin-top:10px;
+    }
+    .compare-heading {
+        font-size:13px;
+        }
+    }
+
+.vermenos {
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+#premio {
+    display: none;
+    padding-bottom: 10rem;
+}
+
+/* responsive medias */
+
+/* responsive medias */
+
+/* responsive medias */
+
+@media screen and (min-width: 600px){
+    .footer-right > *{
+        flex: 1;
+    }
+    .footer-left {
+        flex: 1 0px;
+    }
+    .footer-left {
+        flex: 2 0px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    footer {
+        padding: 15px;
+    }
+
+    .template-columns {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .container-pack {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+        padding-top: 0rem;
+        padding-bottom: 10rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "title-pack"
+        "box-pack"
+        "box-pack2"
+        ;
+    }
+
+    #title-pack {
+        padding-bottom: 1rem;
+    }
+
+    .boxs {
+        margin: 0 auto;
+        display: block;
+        padding: 40px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.1);
+        border-radius: 4px;
+        box-sizing: border-box;
+        overflow: hidden;
+        background: white;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr fr fr fr fr fr;
+        grid-template-areas: 
+        "titlePorque"
+        "main"
+        "izq-sup"
+        "der-sup"
+        "izq-inf" 
+        "der-inf"
+        ;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 5rem;
+    }
+
+    .container p {
+        margin-bottom: 2rem;
+        padding-top: 0.5rem;
+    }
+
+    .image-porque {
+        width: 350px;
+    }
+
+    #main {
+        grid-area: main;
+    }
+    
+    #titlePorque {
+        grid-area: titlePorque;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    #izq-sup {
+        margin: 0 auto;
+        display: block;
+        grid-area: izq-sup;
+        text-align: center;
+        margin-top: 5rem;
+    }
+    
+    #izq-inf {
+        margin: 0 auto;
+        display: block;
+        grid-area: izq-inf;
+        text-align: center;
+    }
+    
+    #der-sup {
+        margin: 0 auto;
+        display: block;
+        grid-area: der-sup;
+        margin-top: 0rem;
+        text-align: center;
+    }
+    
+    #der-inf {
+        margin: 0 auto;
+        display: block;
+        grid-area: der-inf;
+        text-align: center;
+    }
+
+    /* header */
+
+    .navegación {
+        padding-right: 8%;
+    }
+
+    .logo {
+        padding-left: 8%;
+    }
+
+    /* Grover app responsive*/
+
+    .template-columns-groverApp {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "title-ga" 
+        "Imagen1-ga"
+        "text1-ga"
+        "Imagen2-ga"
+        "text2-ga"
+        "Imagen3-ga"
+        "text3-ga";
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 10rem;
+        padding-top: 5rem;
+    }
+
+    .template-columns-groverApp p {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .template-columns-groverApp h3 {
+        padding-bottom: 0rem;
+    }
+
+    #title-ga {
+        padding-bottom: 3rem;
+    }
+
+    #text1-ga {
+        padding-bottom: 3rem;
+    }
+    
+    #text2-ga {
+        padding-bottom: 3rem;
+    }
+    
+    #text3-ga {
+        padding-bottom: 3rem;
+    }
+    
+
+    /* Nunca fue tan fácil vender responsive */
+
+    .container-vender {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .container-vender h2 {
+        background-color: rgb(255, 255, 255);
+        border-bottom-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+        color: rgb(0, 0, 0);
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0.25rem 0.75rem;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+        display: inline;
+    }
+    
+    .container-vender li {
+        list-style: none;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .container-vender mark {
+        background: white;
+    }
+    
+    .container-vender h2 {
+        font-size: 22px;
+    }
+    
+    .grid-vender {
+        grid-template-columns: 1fr;
+        grid-template-rows: fr 1fr 1fr;
+        grid-template-areas: 
+        "titulo-1"
+        "image-vender"
+        "points-vender"
+    }
+
+    
+    #titulo-1 {
+        grid-area: titulo-1;
+    }
+
+    #image-vender {
+        grid-area: image-vender;
+    }
+
+    #points-vender {
+        text-align: center;
+    }
+
+    .image-v {
+        width: 320px;
+
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    /* logo responsive */
+    
+    .logo {
+        display: block;
+        z-index: 9999;
+        padding-left: 9%;
+    }
+
+    .menu-icon {
+        display: flex;
+        padding-right: 9%;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    a {
+        font-weight: 600;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        font-family: "Lato", Sans-serif;
+    }
+
+    .navegación ul {
+        display: block;
+        justify-content: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        text-align: start;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        position: fixed;
+        background-color: white;
+        padding-top: 90px;
+        z-index: 9999;
+    }
+
+    .navegación ul.show {
+        display: none;
+    }
+
+    .menu-icon-close {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        right: 9%;
+        top: 25px;
+        z-index: 11111;
+    }
+
+    .navegación {
+        width: 100%;
+        padding: 0;
+        margin-top: 0px;
+    }
+
+    .navegación ul li {
+        display: block;
+    }
+    
+    .navegación li a:hover {
+        color: #F2D64B;
+        transition: all 0.2s linear;
+    }
+    
+    .navegación li a:active {
+        color: #F2D64B;
+    }
+    
+    .navegación ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        line-height: 80px;
+        transition: all 0.2s linear;
+        border-bottom: 2px solid rgb(223, 223, 223);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /*texto de la portada responsive*/
+
+    .contenedor {
+        width: 80%;
+        margin: 20px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, auto);
+        position: relative;
+        top: 20%;
+    }
+
+    .title {
+        margin-top: 10px;
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    .title2 {
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    /* misión grover responsive  */
+
+    .template-columns {
+        width: 100vw;
+        width: 70%;
+        margin: 20px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: repeat(1, auto);
+        position: relative;
+    }
+    .image {
+        width: 350px;
+        margin: 0 auto;
+        display: block;
+    } 
+}
+
+/* responsive celular */
+
+@media screen and (max-width: 600px) {
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    /* grover pack  */
+
+    .container-pack {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+        padding-top: 0rem;
+        padding-bottom: 10rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "title-pack"
+        "box-pack"
+        "box-pack2"
+        ;
+    }
+
+    #title-pack {
+        padding-bottom: 1rem;
+    }
+
+    .image2 {
+        width: 250px;
+    }
+
+    .boxs {
+        margin: 0 auto;
+        display: block;
+        padding: 40px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.1);
+        border-radius: 4px;
+        box-sizing: border-box;
+        overflow: hidden;
+        background: white;
+        padding-top: 3rem;
+    }
+
+
+
+    /* grover app celular */
+
+    .template-columns-groverApp img {
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .template-columns-groverApp h3 {
+        padding-bottom: 0rem;
+    }
+
+    /* por qué gorver celular */
+
+    .image-porque {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .image {
+        width: 250px;
+        margin: 0 auto;
+        display: block;
+    } 
+
+    /* packs respnsive */
+    .icon-pack-2{
+        width: 100px;
+    }
+
+    /* vender nunca fue tan facil */
+
+    .container-vender {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .grid-vender {
+        width: 90%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .image-v {
+        width: 250px;
+    }
+}
+
