@@ -127,7 +127,7 @@ button {
 
 .fondo {
     background: rgba(40, 40, 70, 0.5);
-    background-image: url('/public/img/mount.jpg');
+    background-image: url('/img/mount.jpg');
     height: 80vh;
     width: 100vw;
     display: flex;
